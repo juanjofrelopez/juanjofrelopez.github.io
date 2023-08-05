@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+main {
+    font-family: 'Libre Baskerville', serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.post-body {
+    margin-left : 15%;
+    margin-right:  15%;
+}
+
+.profile_pic {
+    width: 200px;
+    height: 200px;
+}
+
+.row {
+    display: flex;
+}
+
+.photo-col {
+    flex:50%;
+    text-align: end;
+    margin-right: 5%;
+}
+.name-col {
+    flex:50%;
+    text-align: left;
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.subcript {
+    color: grey;
+}
