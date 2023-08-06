@@ -18,7 +18,6 @@ main {
 }
 
 .trackealo_img {
-    width: 70%;
     text-align: center;
 }
 
@@ -48,4 +47,8 @@ main {
 
 .subcript {
     color: grey;
+}
+
+.project-title {
+    margin-left: 3%;
 }
