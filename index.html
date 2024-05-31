@@ -1,96 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JJL Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <link rel="stylesheet" href="styles.css">
-    
-</head>
-
-<body>
+  <body>
     <main>
-        <h1 class="title">My Personal Portfolio/Blog</h1>
-        <div class="row">
-            <div class="photo-col">
-                <img class="profile_pic" src="static/profile_pic.jpg" alt="me" oncontextmenu="return false;">
-            </div>
-            <div class="name-col">
-                <h1>Juan Jofre Lopez</h1>
-                <h3 class="subcript">Electronic Engineer</h3>
-                <h3 class="subcript">Universidad Nacional de San Juan, Argentina</h3>
-                <div>
-                    <a href = "mailto:juanjofrelopez@gmail.com">Email</a>
-                    &nbsp &nbsp &nbsp
-                    <a href = "https://github.com/juanjofrelopez">Github</a>
-                </div>
-            </div>
+      <div class="post-body">
+        <div>
+          <h1>Juan Ignacio Jofre Lopez</h1>
+          <h4 class="subcript">Electronic Engineer - UNSJ, Argentina 🇦🇷</h4>
+          <div>
+            <a href="mailto:juanjofrelopez@gmail.com">Email</a>
+            &nbsp &nbsp
+            <a href="https://github.com/juanjofrelopez">Github</a>
+          </div>
         </div>
 
-        <div class="post-body">
-            
-            <h2>About Me</h2>
-            <p> Hello there, I’m Juan, an electronic engineer from Argentina 🇦🇷 </p>
-            <p>I’m currently learning and implementing some computer vision strategies for detecting solar panels with Intel RealSense 3D cameras.</p>
-            <p>I'm also learning web development using the MERN stack and focusing on applications with financial APIs to develop an application that helps Argentine investors know their real yield in US dollars.</p>
-            
-            <h2>Personal Projects</h2>
-            <a href="https://trackealo.ar"><h3 class="project-title">Trackealo</h3></a>
-            <div>
-                <p>
-                    Developed a web application that allows Argentinean investors to monitor the actual performance of their portfolios in USD dollars.
-                    Utilized the MERN stack, complemented by Bootstrap and Recharts, to create an engaging and user-friendly UI.
-                    Integrated a Google Sign-in button for a smoother user experience.
-                    Employed two AWS Lambda serverless functions to deploy a personalized ”market price” API, providing up-to-date
-                    closing prices for all stocks at market close.
-                    *explain*
-                    *yt video link*
-                    
-                </p>
-                <div class="trackealo_img"><img src="static/trackealo_app.png" alt="me" width="70%"></div>
-            </div>
+        <!-- <h2>About Me</h2>
+        <p>
+          I’m currently learning and implementing some computer vision
+          strategies for detecting solar panels with Intel RealSense 3D cameras.
+        </p>
+        <p>
+          I'm also learning web development using the MERN stack and focusing on
+          applications with financial APIs to develop an application that helps
+          Argentine investors know their real yield in US dollars.
+        </p> -->
 
-            <a href="https://github.com/juanjofrelopez/optimus_vision"><h3 class="project-title">Optimus Vision</h3></a>
-            <div>
-                <p>*rviz gif*Content project 2</p>
-            </div>
+        <h2>Personal Projects</h2>
+        <a href="https://trackealo.ar" target="_blank">
+          <h3 class="project-title">Trackealo</h3>
+        </a>
+        <div>
+          <p>
+            Developed a web application that allows Argentinean investors to
+            monitor the actual performance of their portfolios in USD dollars.
+            Utilized the MERN stack, complemented by Bootstrap and Recharts, to
+            create an engaging and user-friendly UI. Integrated a Google Sign-in
+            button for a smoother user experience. Employed two AWS Lambda
+            serverless functions to deploy a personalized ”market price” API,
+            providing up-to-date closing prices for all stocks at market close.
+            *explain* *yt video link*
+          </p>
+          <!-- <div class="trackealo_img">
+            <img src="static/trackealo_app.png" alt="me" width="70%" />
+          </div> -->
+        </div>
 
-            <a href="https://github.com/juanjofrelopez/simple-midi-to-dac"><h3 class="project-title">Simple MIDI to DAC</h3></a>
-            <div>
-                <p>Content project 3 little fun project</p>
-            </div>
-            
-            
-            <h2>Experience</h2>
-            <ul>
-                <li>Experience 1</li>
-                <p>Content experience 1</p>
-                <li>Experience 2</li>
-                <p>Content experience 2</p>
-            </ul>
+        <a href="https://github.com/juanjofrelopez/optimus_vision"
+          ><h3 class="project-title">Optimus Vision</h3></a
+        >
+        <div>
+          <p>*rviz gif*Content project 2</p>
+        </div>
 
-            <h2>Learning Adventures</h2>
-            <ul>
-                <li><b>Electronics Engineering</b> (2017 - 2023)</li>
-                <div>
-                    <p>Universidad Nacional de San Juan, Argentina</p>
-                    <p>GPA: 8/10</p>
-                </div>
+        <a href="https://github.com/juanjofrelopez/simple-midi-to-dac"
+          ><h3 class="project-title">Simple MIDI to DAC</h3></a
+        >
+        <div>
+          <p>Content project 3 little fun project</p>
+        </div>
 
-                <li><b>FCE, Cambridge University</b> (2019)</li>
-                <div>
-                    <p>Overall Score: 175, CEFR level: B2</p>
-                </div>
-            </ul>
-        </div>     
-          
+        <h2>Work Experience</h2>
+        <ul>
+          <li>
+            <b>
+              Software Developer @
+              <a href="https://www.softwareontheroad.com/" target="_blank">
+                Software on the road
+              </a>
+            </b>
+            <div class="subcript">October 2023 - Now!</div>
+          </li>
+          <p>Helping startups build their mvp's</p>
+        </ul>
+
+        <h2>Learning Adventures</h2>
+        <ul>
+          <li><b>Electronics Engineering</b> (2017 - 2023)</li>
+          <div>
+            <p>Universidad Nacional de San Juan, Argentina</p>
+            <p>GPA: 8/10</p>
+          </div>
+
+          <li><b>FCE, Cambridge University</b> (2019)</li>
+          <div>
+            <p>Overall Score: 175, CEFR level: B2</p>
+          </div>
+        </ul>
+
+        <h2>Blog</h2>
+      </div>
     </main>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
