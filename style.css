@@ -3,7 +3,21 @@
 
 main {
   font-family: "Source Code Pro", serif;
-  font-size: 20px;
+  font-size: 10px;
+}
+
+/* Larger font size for larger screens */
+@media (min-width: 768px) {
+  main {
+    font-size: 10px;
+  }
+}
+
+/* Even larger font size for very large screens */
+@media (min-width: 1200px) {
+  main {
+    font-size: 20px;
+  }
 }
 
 .home-page-separator {
@@ -29,8 +43,23 @@ main {
   border-radius: 50%;
 }
 
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width of the parent container */
+}
+
 .images {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adjust width as needed */
+}
+
+.images img {
+  max-width: 100%;
+  height: auto; /* Ensure images scale properly */
 }
 
 .row {

@@ -93,8 +93,10 @@
             And we want convex functions because they are easy to optimize,
             meaning the minimum value is easy to find.
           </p>
-          <div class="images">
-            <img src="../static/convex_non_convex.png" alt="me" width="70%" />
+          <div class="images-container">
+            <div class="images">
+              <img src="../static/convex_non_convex.png" alt="me" />
+            </div>
           </div>
           <p>
             In our case we do not have a mathematically defined function that we
@@ -192,8 +194,10 @@ result = sp.optimize.differential_evolution(
             strategy to avoid entering into the realms of noisy data and its
             altercations.
           </p>
-          <div class="images">
-            <img src="../static/no_sl_results.png" alt="me" width="70%" />
+          <div class="images-container">
+            <div class="images">
+              <img src="../static/no_sl_results.png" alt="me" width="70%" />
+            </div>
           </div>
           <p>
             This is the table with the complete results for each ticker in our
@@ -428,8 +432,10 @@ result = sp.optimize.differential_evolution(
             In this case it was set at 10% of the bought price. Once again
             running the simulation gives us these results:
           </p>
-          <div class="images">
-            <img src="../static/sl_results.png" alt="me" width="70%" />
+          <div class="images-container">
+            <div class="images">
+              <img src="../static/sl_results.png" alt="me" width="70%" />
+            </div>
           </div>
           <p>And the table with all the stocks:</p>
           <table>
@@ -670,8 +676,10 @@ result = sp.optimize.differential_evolution(
           </p>
 
           <p>The histograms result in something like this:</p>
-          <div class="images">
-            <img src="../static/sl_param_results.png" alt="me" width="70%" />
+          <div class="images-container">
+            <div class="images">
+              <img src="../static/sl_param_results.png" alt="me" width="70%" />
+            </div>
           </div>
           <p>
             And the table with final results including the definitive stop loss
@@ -929,16 +937,20 @@ result = sp.optimize.differential_evolution(
             In the next bar graph we will observe the CAGR's for each of the 3
             approaches applied to every stock:
           </p>
-          <div class="images">
-            <img src="../static/comparative_cagr.png" alt="me" width="70%" />
+          <div class="images-container">
+            <div class="images">
+              <img src="../static/comparative_cagr.png" alt="me" width="70%" />
+            </div>
           </div>
           <p>The same but comparing the profitability on each stock:</p>
-          <div class="images">
-            <img
-              src="../static/comparative_profitability.png"
-              alt="me"
-              width="70%"
-            />
+          <div class="images-container">
+            <div class="images">
+              <img
+                src="../static/comparative_profitability.png"
+                alt="me"
+                width="70%"
+              />
+            </div>
           </div>
           <p>Better to put a stop loss boy!</p>
 
