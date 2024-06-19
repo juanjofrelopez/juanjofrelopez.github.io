@@ -3,10 +3,21 @@
 
 main {
   font-family: "Source Code Pro", serif;
+  font-size: 20px;
+}
+
+.home-page-separator {
+  margin-top: 5rem;
+}
+
+.home-page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .post-body {
-  font-size: 3vmin;
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 2%;
@@ -34,7 +45,6 @@ main {
 }
 
 .name-col {
-  font-size: 2.5vmin;
   flex: 50%;
   text-align: left;
 }
@@ -42,12 +52,17 @@ main {
 .title {
   text-align: center;
   text-decoration: underline;
-  font-size: 4vmin;
   margin-bottom: 5%;
+}
+
+.my-name {
+  margin-bottom: 0;
 }
 
 .subcript {
   color: grey;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .project-title {
