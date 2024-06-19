@@ -646,6 +646,287 @@ result = sp.optimize.differential_evolution(
             extreme tails in the distributions were cutoff and the profitability
             is now almost certainly above the 50% level.
           </p>
+
+          <h2>The final approach: Setting the stop loss as a parameter</h2>
+          <p>
+            Now for the final round of tests we will include the stop loss as a
+            parameter in our objective function. The range of action will be
+            between 1 and 20 percent.
+          </p>
+
+          <p>The histograms result in something like this:</p>
+          <div class="images">
+            <img src="../static/sl_param_results.png" alt="me" width="70%" />
+          </div>
+          <p>
+            And the table with final results including the definitive stop loss
+            values go like this:
+          </p>
+
+          <table>
+            <tr>
+              <th>Ticker</th>
+              <th>DE SL P fast</th>
+              <th>DE SL P medium</th>
+              <th>DE SL P slow</th>
+              <th>DE SL P CAGR %</th>
+              <th>DE SL P profitability %</th>
+              <th>DE SL P stop loss %</th>
+            </tr>
+            <tr>
+              <td>aapl</td>
+              <td>12</td>
+              <td>33</td>
+              <td>55</td>
+              <td>60.1</td>
+              <td>58.06</td>
+              <td>19.05</td>
+            </tr>
+            <tr>
+              <td>msft</td>
+              <td>14</td>
+              <td>24</td>
+              <td>42</td>
+              <td>65.33</td>
+              <td>57.94</td>
+              <td>19.6</td>
+            </tr>
+            <tr>
+              <td>wmt</td>
+              <td>8</td>
+              <td>21</td>
+              <td>44</td>
+              <td>40.39</td>
+              <td>54.71</td>
+              <td>18.87</td>
+            </tr>
+            <tr>
+              <td>tsla</td>
+              <td>12</td>
+              <td>22</td>
+              <td>41</td>
+              <td>150.94</td>
+              <td>55.0</td>
+              <td>17.06</td>
+            </tr>
+            <tr>
+              <td>nvda</td>
+              <td>13</td>
+              <td>21</td>
+              <td>43</td>
+              <td>104.5</td>
+              <td>60.24</td>
+              <td>16.51</td>
+            </tr>
+            <tr>
+              <td>c</td>
+              <td>9</td>
+              <td>25</td>
+              <td>58</td>
+              <td>39.72</td>
+              <td>56.91</td>
+              <td>18.23</td>
+            </tr>
+            <tr>
+              <td>ko</td>
+              <td>13</td>
+              <td>31</td>
+              <td>47</td>
+              <td>24.49</td>
+              <td>57.6</td>
+              <td>7.95</td>
+            </tr>
+            <tr>
+              <td>amzn</td>
+              <td>5</td>
+              <td>21</td>
+              <td>41</td>
+              <td>103.78</td>
+              <td>60.47</td>
+              <td>15.91</td>
+            </tr>
+            <tr>
+              <td>meli</td>
+              <td>14</td>
+              <td>28</td>
+              <td>42</td>
+              <td>79.79</td>
+              <td>59.54</td>
+              <td>17.07</td>
+            </tr>
+            <tr>
+              <td>googl</td>
+              <td>13</td>
+              <td>32</td>
+              <td>55</td>
+              <td>41.8</td>
+              <td>62.46</td>
+              <td>15.97</td>
+            </tr>
+            <tr>
+              <td>meta</td>
+              <td>7</td>
+              <td>20</td>
+              <td>51</td>
+              <td>99.26</td>
+              <td>71.82</td>
+              <td>13.77</td>
+            </tr>
+            <tr>
+              <td>gm</td>
+              <td>10</td>
+              <td>21</td>
+              <td>44</td>
+              <td>53.6</td>
+              <td>51.28</td>
+              <td>18.27</td>
+            </tr>
+            <tr>
+              <td>orcl</td>
+              <td>15</td>
+              <td>29</td>
+              <td>45</td>
+              <td>55.4</td>
+              <td>55.74</td>
+              <td>10.93</td>
+            </tr>
+            <tr>
+              <td>amd</td>
+              <td>13</td>
+              <td>24</td>
+              <td>59</td>
+              <td>50.96</td>
+              <td>56.29</td>
+              <td>15.88</td>
+            </tr>
+            <tr>
+              <td>brk-b</td>
+              <td>9</td>
+              <td>33</td>
+              <td>46</td>
+              <td>31.88</td>
+              <td>59.81</td>
+              <td>15.49</td>
+            </tr>
+            <tr>
+              <td>txn</td>
+              <td>6</td>
+              <td>24</td>
+              <td>54</td>
+              <td>43.32</td>
+              <td>57.33</td>
+              <td>18.4</td>
+            </tr>
+            <tr>
+              <td>nflx</td>
+              <td>11</td>
+              <td>26</td>
+              <td>42</td>
+              <td>72.59</td>
+              <td>59.8</td>
+              <td>16.47</td>
+            </tr>
+            <tr>
+              <td>ggal</td>
+              <td>8</td>
+              <td>21</td>
+              <td>41</td>
+              <td>76.99</td>
+              <td>57.87</td>
+              <td>14.12</td>
+            </tr>
+            <tr>
+              <td>irs</td>
+              <td>7</td>
+              <td>30</td>
+              <td>49</td>
+              <td>56.48</td>
+              <td>55.59</td>
+              <td>15.43</td>
+            </tr>
+            <tr>
+              <td>bma</td>
+              <td>6</td>
+              <td>28</td>
+              <td>52</td>
+              <td>68.35</td>
+              <td>52.91</td>
+              <td>17.3</td>
+            </tr>
+            <tr>
+              <td>ypf</td>
+              <td>7</td>
+              <td>26</td>
+              <td>48</td>
+              <td>65.01</td>
+              <td>58.91</td>
+              <td>18.87</td>
+            </tr>
+            <tr>
+              <td>supv</td>
+              <td>8</td>
+              <td>34</td>
+              <td>43</td>
+              <td>211.72</td>
+              <td>56.52</td>
+              <td>18.06</td>
+            </tr>
+            <tr>
+              <td>pam</td>
+              <td>8</td>
+              <td>35</td>
+              <td>42</td>
+              <td>86.96</td>
+              <td>60.78</td>
+              <td>19.93</td>
+            </tr>
+            <tr>
+              <td>tx</td>
+              <td>6</td>
+              <td>21</td>
+              <td>49</td>
+              <td>55.03</td>
+              <td>58.96</td>
+              <td>19.27</td>
+            </tr>
+            <tr>
+              <td>cresy</td>
+              <td>6</td>
+              <td>30</td>
+              <td>54</td>
+              <td>58.99</td>
+              <td>54.07</td>
+              <td>18.18</td>
+            </tr>
+            <tr>
+              <td>tgs</td>
+              <td>15</td>
+              <td>26</td>
+              <td>48</td>
+              <td>75.36</td>
+              <td>53.38</td>
+              <td>19.56</td>
+            </tr>
+          </table>
+
+          <h2>Results</h2>
+          <p>
+            In the next bar graph we will observe the CAGR's for each of the 3
+            approaches applied to every stock:
+          </p>
+          <div class="images">
+            <img src="../static/comparative_cagr.png" alt="me" width="70%" />
+          </div>
+          <p>The same but comparing the profitability on each stock:</p>
+          <div class="images">
+            <img
+              src="../static/comparative_profitability.png"
+              alt="me"
+              width="70%"
+            />
+          </div>
+          <p>Better to put a stop loss boy!</p>
+
           <h3>Reference</h3>
           <p>
             The python notebook is
