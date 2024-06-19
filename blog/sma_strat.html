@@ -45,9 +45,22 @@
           <p>$$ p=\frac{profitable \space trades}{total \space trades} $$</p>
           <h2>Approach</h2>
           <p>
-            The yield function will be maximized according to the cagr
+            The yield function will be maximized according to the CAGR
             parameter, then with the optimal set of window lengths, the
             profitability will be calculated.
+          </p>
+          <p>
+            Turns out our problem requires that these rolling window sizes take
+            discrete values, which makes sense because a average couldn't be
+            taken with a floating point value. When some variables of a function
+            are restricted to be integers we are in the realm of "Integer
+            programming", which turns out to be NP-complete. At least
+            theoretically. Even if our function is NP-hard, we can still manage
+            to find an optimal "solution".
+          </p>
+          <p>
+            Since integer linear programming is NP-hard, our problem instances
+            are intractable and so heuristic methods must be used instead.
           </p>
           <h2>Experiment settings</h2>
           <p>
